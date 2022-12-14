@@ -1,0 +1,80 @@
+.nav{
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 70px;
+    background-color: #EEEEEE;
+    align-items: center;
+}
+.nav>*{
+    margin: auto;
+}
+#location{
+    height: 50px;
+    width: 20%;
+}
+#search{
+    height: 44px;
+    width: 90%;
+}
+.searching{
+    display: flex;
+    height: 50px;
+    width: 60%;
+}
+#search-btn{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(0, 27, 34);
+    color: white;
+}
+#sell{
+    height: 50px;
+    border-radius: 20px;
+    font-size: larger;
+}
+.category-nav{
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 40px;
+    align-items: center;
+    background-color: #F5F5F5;
+}
+.category-nav>*{
+    margin: auto;
+}
+#category{
+    width: 20%;
+    border: 0;
+    background-color: #F5F5F5;
+}
+#product-container{
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+#product-container>div{
+    padding: 10px;
+    margin: auto;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    border-radius: 2px;
+}
+#product-container>div>div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#product-container>div>*{
+    margin-top: 0;
+    margin-bottom: 0; 
+}
+#product-container>div>img{
+    width: 100%;
+}

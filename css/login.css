@@ -1,0 +1,40 @@
+#login{
+    width: 30%;
+    margin-inline: auto;
+    padding-top: 100px;
+}
+#cross{
+    margin-left: auto;
+    margin-right: 0;
+    border-color: rgb(1, 48, 1);
+}
+img{
+    width: 100px;
+    display: block;
+    margin-inline: auto;
+}
+#login>h3{
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: green;
+    text-align: center;
+}
+#login>input{
+    width: 80%;
+    border-color: rgb(11, 186, 148);
+    display: block;
+    margin-inline: auto;
+    height: 30px;
+}
+#submit{
+    margin-top: 30px;
+    display: block;
+    margin-inline: auto;
+    height: 50px;
+    background-color: darkgreen;
+    font-size: 15px;
+    color: white;
+    width: 80%;
+    border-radius: 5px;
+}

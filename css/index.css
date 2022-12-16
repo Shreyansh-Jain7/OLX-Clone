@@ -12,6 +12,15 @@
 #location{
     height: 50px;
     width: 20%;
+    color: #002f34;
+    font-size: 20px;
+}
+#lang{
+    color: #002f34;
+    font-size: 20px;
+    height: 50px;
+    border-width: 0;
+    background-color: #EEEEEE;
 }
 #search{
     height: 44px;
@@ -20,13 +29,14 @@
 .searching{
     display: flex;
     height: 50px;
-    width: 60%;
+    width: 50%;
 }
 #search-btn{
     height: 50px;
     width: 50px;
-    background-color: rgb(0, 27, 34);
+    background-color: #002f34;
     color: white;
+    font-size: 25px;
 }
 #sell{
     height: 50px;
@@ -64,6 +74,7 @@
     border-color: gray;
     border-width: 1px;
     border-radius: 2px;
+    padding-bottom: 0;
 }
 #product-container>div>div{
     display: flex;

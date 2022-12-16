@@ -65,5 +65,10 @@ function displayProducts(data){
         more.append(location,day);
         card.append(image,price,name,desc,more);
         document.querySelector("#product-container").append(card);
+
+        card.addEventListener("click",()=>{
+            localStorage.setItem("product",JSON.stringify(element));
+            window.location.href="./product.html";
+        })
     })
 }

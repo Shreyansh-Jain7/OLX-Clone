@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <script src="https://kit.fontawesome.com/8baad6f106.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/product.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="./index.html"><img src="./images/logo.png" alt=""></a>
+        <select id="location">
+            <option value="">Location</option>
+            <option value="Kentucky">Kentucky</option>
+            <option value="Pennsylvania">Pennsylvania</option>
+            <option value="Tennessee">Tennessee</option>
+            <option value="Wisconsin">Wisconsin</option>
+        </select>
+        <div class="searching">
+            <input type="text" oninput="search()" id="search" placeholder="Find Cars, Mobile Phones and more..." />
+            <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <select id="lang">
+            <option value="English">English</option>
+            <option value="Hindi">Hindi</option>
+        </select>
+        <h3 id="login"><a href="./login.html">Login</a></h3>
+        <button id="sell">+ Sell</button>
+    </div>
+    <div id="path">
+        <h3><a href="./index.html">Home</a>  >  <a href="./product.html"><span id="product-name"></span></a></h3>
+    </div>
+    <div id="container">
+        <div id="product-details">
+            <div id="image"></div>
+            <div>
+                <h2>Details</h2>
+                <p id="details"></p>
+                <hr>
+                <h2>Description</h2>
+                <p id="desc"></p>
+            </div>  
+        </div>
+        <div>
+            <div id="price"></div>
+            <div id="seller"></div>
+        </div>
+    </div>
+    <script src="./Scripts/product.js"></script>
+</body>
+
+</html>

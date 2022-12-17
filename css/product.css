@@ -1,0 +1,74 @@
+.nav{
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 70px;
+    background-color: #EEEEEE;
+    align-items: center;
+}
+.nav>*{
+    margin: auto;
+}
+#location{
+    height: 50px;
+    width: 20%;
+    color: #002f34;
+    font-size: 20px;
+}
+#lang{
+    color: #002f34;
+    font-size: 20px;
+    height: 50px;
+    border-width: 0;
+    background-color: #EEEEEE;
+}
+#search{
+    height: 44px;
+    width: 90%;
+}
+.searching{
+    display: flex;
+    height: 50px;
+    width: 50%;
+}
+#search-btn{
+    height: 50px;
+    width: 50px;
+    background-color: #002f34;
+    color: white;
+    font-size: 25px;
+}
+#sell{
+    height: 50px;
+    border-radius: 20px;
+    font-size: larger;
+}
+#container{
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+#container>div{
+    margin: auto;
+}
+#product-details{
+    width: 73%;
+    padding: 5px;
+}
+#product-details>div,#price,#seller{
+    width: 100%;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    border-radius: 2px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+img{
+    display: block;
+    margin-inline: auto;
+}
+#path{
+    background-color: #F5F5F5;
+    padding-left: 100px;
+}

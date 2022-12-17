@@ -2,6 +2,8 @@
     width: 30%;
     margin-inline: auto;
     padding-top: 100px;
+    border-style: solid;
+    border-color: green;
 }
 #cross{
     margin-left: auto;

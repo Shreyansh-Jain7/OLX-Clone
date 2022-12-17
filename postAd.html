@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Your Ad</title>
+</head>
+<body>
+    <div id="bar">
+
+    </div>
+    <h1>POST YOUR AD</h1>
+    <div id="container">
+        <div id="one">
+            <h2>INCLUDE SOME DETAILS</h2>
+            <label>Name*</label>
+            <input type="text" id="name" required>
+            <label>Select Category*</label>
+            <select id="category" required>
+                <option value="">ALL CATEGORIES</option>
+                <option value="Car">Car</option>
+                <option value="Fish">Fish</option>
+                <option value="Salad">Salad</option>
+                <option value="Table">Table</option>
+                <option value="Chair">Chair</option>
+                <option value="Keyboard">Keyboard</option>
+            </select>
+            <label>Description*</label>
+            <input type="text" id="desc" required>
+        </div>
+        <div id="two">
+            <h2>SET A PRICE</h2>
+            <label>Price*</label>
+            <input type="number" id="price" required>
+        </div>
+        <div id="three">
+            <h2>UPLOAD A PHOTO</h2>
+            <!-- <input type="image" id="image" required> -->
+            <input type="file"  accept="image/gif, image/jpeg, image/png" name="image" id="image">
+        </div>
+        <div id="four">
+            <h2>CONFIRM YOUR LOCATION</h2>
+            <label>State*</label>
+            <select id="location" required>
+                <option value="">Location</option>
+                <option value="Kentucky">Kentucky</option>
+                <option value="Pennsylvania">Pennsylvania</option>
+                <option value="Tennessee">Tennessee</option>
+                <option value="Wisconsin">Wisconsin</option>
+            </select>
+        </div>
+        <div id="five">
+            <h2>Enter YOUR DETAILS</h2>
+            <label>Name*</label>
+            <input type="text" id="seller" required>
+            <label>Details*</label>
+            <input type="text" id="details" required>
+        </div>
+        <div id="six">
+            <button id="submit">Post now</button>
+        </div>
+    </div>
+</body>
+<script src="./Scripts/postAd.js"></script>
+</html>

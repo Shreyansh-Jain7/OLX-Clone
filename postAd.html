@@ -5,18 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Post Your Ad</title>
+    <link rel="stylesheet" href="./css/postAd.css">
+    <script src="https://kit.fontawesome.com/8baad6f106.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="bar">
-
+        <a href="./index.html"><i class="fa-solid fa-arrow-left-long"></i></a>
+        <h1>POST YOUR AD</h1>
     </div>
-    <h1>POST YOUR AD</h1>
+    
     <div id="container">
         <div id="one">
             <h2>INCLUDE SOME DETAILS</h2>
-            <label>Name*</label>
-            <input type="text" id="name" required>
-            <label>Select Category*</label>
+            <label>Name*</label><br>
+            <input type="text" id="name" required><br>
+            <label>Select Category*</label><br>
             <select id="category" required>
                 <option value="">ALL CATEGORIES</option>
                 <option value="Car">Car</option>
@@ -25,36 +28,36 @@
                 <option value="Table">Table</option>
                 <option value="Chair">Chair</option>
                 <option value="Keyboard">Keyboard</option>
-            </select>
-            <label>Description*</label>
+            </select><br>
+            <label>Description*</label><br>
             <input type="text" id="desc" required>
         </div>
         <div id="two">
             <h2>SET A PRICE</h2>
-            <label>Price*</label>
-            <input type="number" id="price" required>
+            <label>Price*</label><br>
+            <input type="number" id="price" required><br>
         </div>
         <div id="three">
-            <h2>UPLOAD A PHOTO</h2>
+            <h2>UPLOAD A PHOTO</h2><br>
             <!-- <input type="image" id="image" required> -->
             <input type="file"  accept="image/gif, image/jpeg, image/png" name="image" id="image">
         </div>
         <div id="four">
             <h2>CONFIRM YOUR LOCATION</h2>
-            <label>State*</label>
+            <label>State*</label><br>
             <select id="location" required>
                 <option value="">Location</option>
                 <option value="Kentucky">Kentucky</option>
                 <option value="Pennsylvania">Pennsylvania</option>
                 <option value="Tennessee">Tennessee</option>
                 <option value="Wisconsin">Wisconsin</option>
-            </select>
+            </select><br>
         </div>
         <div id="five">
-            <h2>Enter YOUR DETAILS</h2>
-            <label>Name*</label>
-            <input type="text" id="seller" required>
-            <label>Details*</label>
+            <h2>ENTER YOUR DETAILS</h2>
+            <label>Name*</label><br>
+            <input type="text" id="seller" required><br>
+            <label>Details*</label><br>
             <input type="text" id="details" required>
         </div>
         <div id="six">

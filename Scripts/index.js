@@ -83,9 +83,12 @@ if (ad!==null){
 }
 
 function displayAd(data){
-    document.querySelector("#Ad").innerHTML=null;
+    document.querySelector("#Ad-container").innerHTML=null;
     let adHeading=document.createElement("h2");
     adHeading.innerText="Your Ad";
+    document.querySelector("#Ad-container").append(adHeading);
+    let Ad=document.createElement("div");
+    document.querySelector("#Ad-container").append(Ad);
     data.forEach((element) => {
         let card=document.createElement("div");
         let image=document.createElement("img");
@@ -107,7 +110,7 @@ function displayAd(data){
         day.style.color="grey";
         more.append(location,day);
         card.append(image,price,name,desc,more);
-        document.querySelector("#Ad").append(adHeading,card);
+        Ad.append(card);
 
         card.addEventListener("click",()=>{
             localStorage.setItem("product",JSON.stringify(element));

@@ -42,6 +42,8 @@
     height: 50px;
     border-radius: 20px;
     font-size: larger;
+    border-width: 4px;
+    border-color: blue;
 }
 #container{
     display: flex;
@@ -70,5 +72,8 @@ img{
 }
 #path{
     background-color: #F5F5F5;
-    padding-left: 100px;
+    padding-left: 120px;
+}
+#price{
+    margin-top: 0;
 }

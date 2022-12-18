@@ -72,3 +72,47 @@ function displayProducts(data){
         })
     })
 }
+
+document.querySelector("#sell").addEventListener("click",()=>{
+    window.location.href="./postAd.html";
+})
+
+var ad=JSON.parse(localStorage.getItem("Ad"));
+if (ad!==null){
+    displayAd(ad);
+}
+
+function displayAd(data){
+    document.querySelector("#Ad").innerHTML=null;
+    let adHeading=document.createElement("h2");
+    adHeading.innerText="Your Ad";
+    data.forEach((element) => {
+        let card=document.createElement("div");
+        let image=document.createElement("img");
+        image.setAttribute("src",element.image);
+        let price=document.createElement("h2");
+        price.innerText=element.price;
+        let name=document.createElement("h3");
+        name.innerText=element.name;
+        name.style.color="grey";
+        let desc=document.createElement("h4");
+        desc.innerText=element.description;
+        desc.style.color="grey";
+        let more= document.createElement("div");
+        let location=document.createElement("p");
+        location.innerText=element.location;
+        location.style.color="grey";
+        let day=document.createElement("p");
+        day.innerText=element.uploaded;
+        day.style.color="grey";
+        more.append(location,day);
+        card.append(image,price,name,desc,more);
+        document.querySelector("#Ad").append(adHeading,card);
+
+        card.addEventListener("click",()=>{
+            localStorage.setItem("product",JSON.stringify(element));
+            window.location.href="./product.html";
+        })
+    })
+}
+

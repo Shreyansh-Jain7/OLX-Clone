@@ -92,7 +92,7 @@ function displayAd(data){
     data.forEach((element) => {
         let card=document.createElement("div");
         let image=document.createElement("img");
-        image.setAttribute("src",element.image);
+        image.setAttribute("src","https://www.lezzat.co.uk/wp-content/uploads/2021/03/Amazon-Product-Photography-Agency-UK-1.jpg");
         let price=document.createElement("h2");
         price.innerText=element.price;
         let name=document.createElement("h3");
